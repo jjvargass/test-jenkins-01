@@ -47,7 +47,7 @@ pipeline {
             steps {
               sh '''
                   docker tag apptest:latest jjvargass/apptest:latest
-                  docker push mijack/apptest:latest
+                  docker push jjvargass/apptest:latest
                   docker rmi apptest:latest
                 '''
             }
